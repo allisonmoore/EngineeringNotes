@@ -60,7 +60,25 @@ A 4x3 matrix takes vectors of length 3 as input and produces vectors of length 4
 The only solution to $Ax = 0$ is $x = 0$. Cannot combine any of the vectors with any weights to obtain 0, ie. vectors are not multiples of each other and can not be formed by any combination of the other vectors.
 
 \subsection{Vector Space}
-A set of vectors which has defined scalar multiplication and vector addition. A vector space must contain the zero element so that it is ``closed'' under addition. This means that if you add two vectors in the space, the result must also be in the space.  This is impossible if it does not contain $0$ because if you add $a$ and $-a$, you get $0$.
+A set of vectors which is defined and closed for both scalar multiplication and vector addition. The following conditions also hold when u, v are objects of V and c, d are scalars.  
+\begin{itemize}
+\item Commutative for addition: $u+v = v+u$
+\item Associative for addition: $(u + v) + w = u + (v + w)$
+\item Distributive for addition: $c(u + v) = cu + cv$
+\item Zero vector exists: $u + 0 = u$
+\item Additive inverse exists: $u + z = 0$
+\item Multiplicative identity: $1 * u = u$
+\item Associative for multiplication: $(cd)u = c(du)$
+\item Distributive for multiplication: $(c+d)u = cu + du$
+\end {itemize}
+
+\subsection{Subspace}
+S is a subspace of V if the following properties hold:
+\begin{itemize}
+\item S contains the zero vector
+\item S is “closed” under addition (If u and v is in S, then u+v is also in S)
+\item S is “closed” under scalar multiplication (If c is a scalar and v is in S, then c*v is also in S)
+\end{itemize}
 
 \subsection{Basis}
 $n$ independent vectors that span a space exactly $n$ dimensional.  If there are $n+1$ or more vectors in an $n$ dimensional space, then there are ``too many'', which means they cannot be linearly independent. If there are ``not enough'' (less than $n$) vectors, then they cannot span the space.
