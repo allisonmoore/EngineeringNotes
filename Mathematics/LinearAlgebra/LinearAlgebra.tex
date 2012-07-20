@@ -145,11 +145,10 @@ These actions can be performed on the matrix in any order
 \end{itemize}
 
 \subsection{Example}
-??? May not be correct
 Consider the system of equations:
 \begin{align*}
 2x + 4y - 2z = 2\\
-4x + 9y - 3z = 9\\
+4x + 9y - 3z = 8\\
 -2x - 3y + 7z = 10
 \end{align*}
 
@@ -173,6 +172,9 @@ Step 3: $r_3 = r_3 - (r_2)$ ($l_{3,2} = 1$)
 0x + 1y + 1z = 4\\
 0x + 0y + 4z = 8
 \end{align*}
+
+Backward substitution can be used from here to solve the system by first solving for z and then y.
+$z = 2, y = 2,$ and $x = -1$
 
 On the $i$th step, both sides of the equation are multiplied by an elimination matrix:
 $E_i Ax = E_i b$
